@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+.area{
+    width: 100vw;
+    height: 100vh;
+}
+#wrap{
+    display: flex;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+#wrap > div {
+    min-width: 100vw;
+}
+.item{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.item01{ background: #e8d3d1; }
+.item02{ background: #e9dfe5; }
+.item03{ background: #f6bfbc; }
+.item04{ background: #f5b199; }
+.item05{ background: #56aa59; }
+.item06{ background: #f2a0a1; }
+.item07{ background: #ee827c; }
+.item08{ background: #f4b3c2; }
+.item09{ background: #e8d3c7; }
+
+/* Firefoxのスクロールバーを非表示にする */
+body::-moz-scrollbar {
+    width: 0px;
+}
+
+/* WebKitブラウザ（Chrome, Safariなど）のスクロールバーを非表示にする */
+body::-webkit-scrollbar {
+    display: none;
+    
+}
+#wrap::-webkit-scrollbar {
+    display: none;
+
+}
+
+/* IEおよびEdgeのスクロールバーを非表示にする */
+body {
+    -ms-overflow-style: none;
+}
